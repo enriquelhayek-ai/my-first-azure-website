@@ -1,72 +1,135 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Enrique Hayek Portfolio</title>
+  <title>Joe Hayek Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f5f7fa;
-      color: #222;
       margin: 0;
-      padding: 0;
+      background-color: #f4f6f8;
+      color: #222;
     }
 
     header {
       background-color: #0078d4;
       color: white;
-      padding: 40px;
       text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    nav {
+      background-color: #222;
+      text-align: center;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
     }
 
     section {
-      max-width: 800px;
+      max-width: 900px;
       margin: 30px auto;
-      background: white;
-      padding: 25px;
-      border-radius: 10px;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
     }
 
     h2 {
       color: #0078d4;
     }
 
+    .project-card {
+      background-color: #f4f6f8;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
     footer {
       text-align: center;
-      padding: 20px;
       background-color: #222;
       color: white;
+      padding: 20px;
+      margin-top: 30px;
     }
   </style>
 </head>
+
 <body>
 
   <header>
-    <h1>Enrique Hayek</h1>
-    <p>My First Azure Website</p>
+    <h1>Joe Hayek</h1>
+    <p>Business | Marketing | Technology | Azure Beginner</p>
   </header>
 
-  <section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
-    <p>Hello, my name is Enrique. I am learning cloud computing with Azure.</p>
+    <p>
+      Hello, my name is Joe Hayek. I am interested in business, marketing,
+      technology, and cloud computing. This website is my first project deployed
+      using Microsoft Azure Static Web Apps.
+    </p>
   </section>
 
-  <section>
+  <section id="skills">
     <h2>Skills</h2>
-    <p>Marketing, business, technology, Azure, GitHub, and web development.</p>
+    <p>
+      Microsoft Azure, GitHub, HTML, CSS, marketing, business strategy,
+      digital marketing, Canva, Shopify, and social media.
+    </p>
   </section>
 
-  <section>
+  <section id="projects">
     <h2>Projects</h2>
-    <p>This project shows that I can create and deploy a website using Azure Static Web Apps.</p>
+
+    <div class="project-card">
+      <h3>My First Azure Website</h3>
+      <p>
+        I built and deployed this portfolio website using HTML, CSS, GitHub,
+        and Azure Static Web Apps. The website automatically updates when I
+        make changes in GitHub.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>Future Project: To Do List Web App</h3>
+      <p>
+        My next goal is to build a simple web app where users can add,
+        complete, and delete tasks.
+      </p>
+    </div>
   </section>
 
-  <section>
+  <section id="contact">
     <h2>Contact</h2>
     <p>Email: your-email-here@example.com</p>
+    <p>LinkedIn: your-linkedin-here</p>
+    <p>GitHub: your-github-link-here</p>
   </section>
 
   <footer>
-    <p>Created with Azure Static Web Apps</p>
+    <p>Created by Joe Hayek | Deployed with Microsoft Azure</p>
   </footer>
 
 </body>
